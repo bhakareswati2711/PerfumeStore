@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper
+        {
+            min-height: 300px;
+            width: 80%;
+            border: 1px solid #000000;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:60px 195px 100px 140px 120px 90px;
+            grid-gap:10px;
+            grid-template-areas: " header header header"
+                                 "hero main-content main-content"
+                                 "sidebar main-content main-content"
+                                 "sidebar  extra-content extra-content"
+                                 "related-images related-images related-posts"
+                                 "footer footer footer";
+        }
+        .header{
+           background-color: blueviolet; 
+           color: white;
+           border: 1px solid black;
+           grid-area: header;
+           text-align: center;
+           line-height: 50px;
+        }
+
+        .hero{
+           background-color: blueviolet; 
+           color: white;
+           border: 1px solid black;
+           grid-area: hero;
+           text-align: center;
+        }
+
+        .main-content{
+           background-color: palegoldenrod;; 
+           color: white;
+           border: 1px solid black;
+           grid-area: main-content;
+           text-align: center;
+        }
+
+        .sidebar{
+           background-color: blueviolet; 
+           color: white;
+           border: 1px solid black;
+           grid-area: sidebar;
+           text-align: center;
+        }
+
+        .extra-content{
+           background-color: blueviolet; 
+           color: white;
+           border: 1px solid black;
+           grid-area: extra-content;
+           text-align: center;
+        }
+
+        .related-images{
+           background-color: blueviolet; 
+           color: white;
+           border: 1px solid black;
+           grid-area: related-images;
+           text-align: center;
+        }
+
+        .related-posts{
+           background-color: blueviolet; 
+           color: white;
+           border: 1px solid black;
+           grid-area: related-posts;
+           text-align: center;
+        }
+
+        .footer{
+           background-color: blueviolet; 
+           color: white;
+           border: 1px solid black;
+           grid-area: footer;
+           text-align: center;
+           line-height: 80px;
+        }
+        .header h1
+        {
+            font-size: 40px;
+        }
+        .hero img{
+        max-height: 260px;
+        width: 100%;
+        } 
+        .main-content img{
+        max-height: 303px;
+        width: 100%;
+        }
+
+        .extra-content img{
+        max-height: 141px;
+        width: 100%;
+        } 
+        .sidebar img{
+        max-height: 248px;
+        width: 100%;
+        } 
+        .related-images img{
+        max-height: 118px;
+        width: 100%;
+        } 
+        .related-posts img{
+        max-height: 118px;
+        width: 100%;
+        } 
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+          <h1>Flower</h1>
+        </div>
+
+        <div class="hero">
+            <img src="Img/flower.jpg">
+        </div>
+
+        <div class="main-content">
+            <img src="Img/n5.jpg">
+        </div>
+
+        <div class="sidebar">
+            <img src="Img/f1.jpg">
+        </div>
+
+        <div class="extra-content">
+            <img src="Img/flower.jpg">
+        </div>
+
+        <div class="related-images">
+            <img src="Img/n4.jpg">
+        </div>
+
+        <div class="related-posts">
+            <img src="Img/n4.jpg">
+        </div>
+
+        <div class="footer">
+           Copyright 2024 Designed by SWATI
+        </div>
+
+    </div>
+</body>
+</html>

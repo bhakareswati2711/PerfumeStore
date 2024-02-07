@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            min-height: 500px;
+            width: 80%;
+            border: 1px solid #000000;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);  
+            grid-template-rows: 600px 800px 400px;
+            grid-template-areas: "page1 page1 page1 page1"
+                "page2 page2 page2 page2"
+                "page3 page3 page3 page3";
+        }
+
+        .page1 {
+            background-image:url(Img/beauty.avif);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            /* border: 1px solid black; */
+            grid-area: page1;
+            grid-gap:1px;
+            height: 550px;
+        
+            width: auto;
+           
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 140px 200px;
+            grid-template-areas: "head logo"
+                            "blank body";
+        }
+
+        .head {
+            
+            color: black;
+            grid-area: head;
+        }
+        .blank
+        {
+            grid-area: blank;
+        }
+        .head{
+            
+            font-size: 30px;
+            margin: 10px auto auto 60px;
+        }
+        .logo {
+          
+            font-size: large;
+            color: black;
+            grid-area: logo;
+            margin-top: 10px;
+           
+        }
+        .logo a{
+          text-decoration: none;
+          padding: 10px;
+
+        }
+        .logo a:hover
+        {
+            font-size: 20px;
+            color: blueviolet;
+        }
+        .logo img
+        {
+            min-height: 10px;
+            width: auto;
+        }
+        .body {
+           
+            color: black;
+            grid-area: body;
+            padding: 40px; 
+        }
+        .button1
+        {
+            width: 80px;
+            min-height: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .page2 {
+           
+            color: white;
+            /* border: 1px solid black; */
+            grid-area: page2;
+
+            grid-gap:1px;
+            min-height: 900px;
+            width: 80%;
+            
+            margin: auto;
+            grid-gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows:120px 220px 70px 180px 180px;
+            grid-template-areas: "head2 head2 head2 head2"
+                            "body2 body2 body2 body2"
+                            "label1 label2 label3 label4"
+                            "offer1 offer1 offer2 offer2"
+                            "offer1 offer1 offer3 offer3";
+        }
+        .head2
+        {
+            color: black;
+            grid-area: head2;
+            padding: 10px;
+        }
+        .head2 h1
+        {
+           margin-left:300px; 
+        }
+        .head2 h4
+        {
+           margin-left:270px; 
+           font-size: medium;
+        }
+        .head2 h3
+        {
+           margin-left:300px; 
+           font-size: medium;
+        }
+        .body2
+        {
+            color: black;
+            grid-area: body2;
+            margin-left: 40px;
+        }
+        .body2 img{
+            height: 220px;
+            width: 200px;
+        }
+       
+        .label1
+        {
+            color: black;
+            font-family:papyrus;
+            grid-area: label1;
+            margin-left: 40px;
+        }
+        .label1 h5
+        {
+            color: red;
+        }
+        .label2
+        {
+            color: black;
+            font-family:papyrus;
+            grid-area: label2;
+            margin-left: 40px;
+        }
+        .label2 h5
+        {
+            color: plum;
+        }
+        .label3
+        {
+            color: black;
+            font-family:papyrus;
+            grid-area: label3;
+            margin-left: 40px;
+        }
+        .label3 h5
+        {
+            color:grey;
+        }
+        .label4
+        {
+            color: black;
+            grid-area: label4;
+            font-family:papyrus;
+            margin-left: 40px;
+        }
+        .label4 h5
+        {
+            color:burlywood;
+        }
+        .offer1
+        {
+            color: white;
+            grid-area: offer1;
+        }
+        .offer1 img{
+            height: 348px;
+            width: 428px;
+        }
+        .offer2
+        {
+            color: white;
+            grid-area: offer2;
+        }
+        .offer2 img{
+            height: 180px;
+            width: 425px;
+        }
+        .offer3
+        {
+            color: white;
+           grid-area: offer3;
+        }
+        .offer3 img{
+            height: 158px;
+            width: 425px;
+        }
+        .page3 {
+           background-image: url(Img/perfumebg.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            color: black;
+            border: 1px solid black;
+            grid-area: page3;
+
+            min-height: 400px;
+            width: 80%;
+            
+            margin: auto;
+            grid-gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:250px 80px;
+            /* grid-template-areas: "heading blank"
+                            "searchbar blank"
+                            "footer footer  20px"
+                                ;
+         */
+        }
+        .heading
+        {
+            color: black;
+            /* grid-area: heading; */
+            margin-left: 40px;
+        }
+        .heading h2
+        {
+            margin-left: 15px;
+        }
+        .heading h4
+        {
+            margin-left: 40px;
+        }
+        .searchbar
+        {
+            color: black;
+            /* grid-area: searchbar; */
+            margin-left: 40px;
+        }
+        .footer
+        {
+            color: black;
+            /* grid-area: footer; */
+            margin-top: 80px;
+        }
+        .footer h3
+        {
+            padding-left: 350px;
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="page1">
+
+            <div class="head">
+            <img src="Img/perfume.webp">
+                MARKHOR
+            </div>
+            <div class="logo">
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Services</a>
+                <a href="">Product</a>
+                <a href="">History</a>
+                <img src="Img/search.png">
+            </div>
+           <div class="blank">
+          
+           </div>
+             <div class="body">
+                <h4> Hello everyone </h4>
+                <h1>BEST BEAUTY ITEMS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, officia Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.</p><br>
+                <button class="button1">Shop Now</button>
+                <a href="">go to next</a>
+            </div>
+
+        </div>
+        <div class="page2">
+            <div class="head2">
+                <h1>
+                    RECENT PRODUCT
+                </h1><br>
+                <h4>Lorem  dolor sit dolor sit ipsum dolor sit amet consectetur. </h4>
+                   <h3> Lorem ipsum dolor sit amet  dolor sit constetur.</h3>
+               
+            </div>
+            <div class="body2">
+                <img src="Img/redroseperfume.jpg">
+                <img src="Img/pinkperfume.jpg">
+                <img src="Img/whiteperfume.jpg">
+                <img src="Img/orangeperfume.jpg">
+            </div>
+            <div class="label1">
+                <h3>Red Rose</h3>
+                <h5> Lakme brand<br>$500.00 Rs</h5>
+            </div>
+            <div class="label2">
+                <h3>Purple Rose</h3>
+                <h5> Lakme brand<br>$650.00 Rs</h5>
+            </div>
+            <div class="label3">
+                <h3>Black Rose</h3>
+                <h5> Lakme brand<br>$650.00 Rs</h5>
+            </div>
+            <div class="label4">
+                <h3>Yellow Rose</h3>
+                <h5> Lakme brand<br>$560.00 Rs</h5>
+            </div>
+            <div class="offer1">
+                <img src="Img/offer1.jpg">
+            </div>
+            <div class="offer2">
+                <img src="Img/offer2.jpg">
+            </div>
+            <div class="offer3">
+                <img src="Img/offe3.jpg">
+            </div>           
+        </div>
+        <div class="page3">
+            <div class="heading">
+                <h2>
+                    JOIN OUR MAILING LIST
+                </h2><br>
+                <h4>Lorem  dolor sit dolor sit ipsum dolor . </h4><br>
+                   <h4> Lorem ipsum dolor sit amet  dolor</h4>
+        
+                <input type="text" id="search" placeholder="Enter you mail here" autocomplete="off">
+            </div>
+            
+             <div class="footer">
+                <h3>VISIT OUR WEB AGAIN..</h3>
+             </div>
+        </div>
+    </div>
+</body>
+
+</html>

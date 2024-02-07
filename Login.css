@@ -1,0 +1,114 @@
+.main-head
+{
+    border: 6px solid black;
+    border-radius: 20px;
+    width: 600px;
+    margin: 100px auto;
+    min-height: 400px;
+    border-top-color:rgb(168, 7, 168);
+    border-bottom-color:rgb(201, 15, 201) ;
+    /* filter: drop-shadow(16px 7px 18px rgb(221, 17, 194)); */
+    border-left: 0;
+    border-right: 0;
+    
+    height: 100px;
+}
+body{
+    background-image: url(Img/bg3.jpg);
+    background-repeat: no-repeat;
+}
+h2
+{
+    font-size: 32px;
+    font-weight: bold; 
+    text-align: center;
+}
+h2:hover
+{
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+}
+.form-controls
+{
+    margin: 20px 56px;
+}
+label
+{
+    color: rgb(31, 2, 58);
+    font-size: 22px;
+    font-weight: bold;
+}
+input[type=text]
+{
+    width: 280px;
+    min-height: 20px;
+    padding-left: 25px;
+    background-image: url(Img/customer.png);
+    /* background-position: 0px 10px; */
+    background-repeat: no-repeat;
+    border: none;
+    border-bottom: 1px solid black;
+}
+input[type=text]::placeholder
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type=password]
+{
+    width: 280px;
+    min-height: 20px;
+    padding-left: 25px;
+    background-image: url(Img/pass.png);
+    /* background-position: 0px 10px; */
+    background-repeat: no-repeat;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[type=password]::placeholder
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+input[type=reset]
+{
+    width: 100px;
+    min-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+input[type=reset]:hover
+{
+    background-color: paleturquoise;
+    color: blue;
+}
+
+input[type=submit]
+{
+    width: 100px;
+    margin-left:20px ;
+    min-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+input[type=submit]:hover
+{
+    background-color: paleturquoise;
+    color: blue;
+}
+a
+{
+   text-decoration: none; 
+   color: blueviolet;
+   font-weight: bold;
+   padding: 20px;
+}
+a:hover
+{
+    color: black;
+}
